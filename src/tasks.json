@@ -1,0 +1,58 @@
+[
+	{
+		"taskID": 0,
+		"taskName": "Programming Langauge",
+		"taskProgress": "Incomplete",
+		"taskCompleted": false,
+		"taskDescription": "Learn a programming language"
+	
+	},
+	{
+		"taskID": 1,
+		"taskName": "GitHub",
+		"taskProgress": "Incomplete",
+		"taskCompleted": false,
+		"taskDescription": "Learn how GitHub works"
+	
+	},
+	{
+		"taskID": 2,
+		"taskName": "Portfolio Building",
+		"taskProgress": "Incomplete",
+		"taskCompleted": false,
+		"taskDescription": "Build a simple site to represent yourself or something your passionate about and use GitHub to store your code"
+	
+	},
+	{
+		"taskID": 3,
+		"taskName": "Attend a Meetup!",
+		"taskProgress": "Incomplete",
+		"taskCompleted": false,
+		"taskDescription": "Meetups are a great way to network and get your foot in the door to the tech industry. Pick a meetup that seems interesting and check it out!"
+	
+	},
+	{
+		"taskID": 4,
+		"taskName": "Participate in a Hackathon",
+		"taskProgress": "Incomplete",
+		"taskCompleted": false,
+		"taskDescription": "Hackathons are another great way to meet others like you and either practice a language you already know or learn a new one. Check out the links below for Hackathons in your area!"
+	
+	},
+	{
+		"taskID": 5,
+		"taskName": "Resume Building",
+		"taskProgress": "Incomplete",
+		"taskCompleted": false,
+		"taskDescription": "Now that you've got a project or projects to show off, lets get you going with a technical resume! Check out the links listed to see the format and structure of what a technical resume looks like"
+	},
+	{
+		"taskID": 6,
+		"taskName": "Interview Prep",
+		"taskProgress": "Incomplete",
+		"taskCompleted": "",
+		"taskDescription": "It's extremely important to be career and industry ready, but now it's time to get you actually working in tech. Technical interviews are one of a kind. But have no fear, help is here! Check out the links below to start prepping for technical interviews"
+	
+	}
+	
+]
