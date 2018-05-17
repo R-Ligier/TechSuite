@@ -1,35 +1,65 @@
 import React from 'react';
-import RaisedButton from 'material-ui/RaisedButton';
+import PropTypes from 'prop-types';
+import Button from 'muicss/lib/react/button';
 
 
-const completedStyle = {
-  background: 'green',
-};
+// const states = [
+// 	{
+// 		name: "Incompleted",
+// 		color: "red",
+// 	},
+// 	{
+// 		name: "In progress",
+// 		color: "yellow",
+// 	},
+// 	{
+// 		name: "Completed",
+// 		color: "green",
+// 	},
+// ];
 
-const incompletedStyle = {
-  background: '#26ee99',
-}
-class Button extends React.Component {
-	constructor(props){
-		super(props);
-		this.state = {status: 'red'}
-	}
+// const completedStyle = {
+//   background: 'green',
+// };
 
-	changeColor(){
-		this.setState({status: 'green'})
+// const incompletedStyle = {
+//   background: '#26ee99',
+// }
+class MyButton extends React.Component {
+	// constructor(props){
+	// 	super(props);
+	// }
+
+	getStateColor(stateName) {
+		const stateColors = {
+			"Incomplete": "red",		
+			"In Progress": "yellow",
+			"Completed": "green",
+		};
+
+		return stateColors[stateName];
 	}
 
 	render() {
+		const { task, handleTaskChange } = this.props;
+
 		return (
 			<div>
-			<Button onClick = {this.changeColor.bind(this)} style = {{background: this.state.status}}></Button>
-			
+				<Button size = "large"
+					onClick={() => handleTaskChange(task)}
+					style={{ background: this.getStateColor(task.taskProgress) }}>
+					{task.taskProgress}
+				</Button>
       		</div>
-
   	);
   }
 }
 
-export default Button;
+MyButton.propTypes = {
+	task: PropTypes.object,
+	handleTaskChange: PropTypes.func
+}
+
+export default MyButton;
 
    

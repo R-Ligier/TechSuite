@@ -1,76 +1,56 @@
 import React, { Component } from 'react';
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
-import Button from './Button.js';
-import tasks from './tasks.json';
-
-
-
-const completedStyle = {
-  background: '#ffd72f',
-};
-
-const incompletedStyle = {
-  background: '#26ee99',
-}
+import VerticalTimeline from './VerticalTimeline.js'
+import Appbar from 'muicss/lib/react/appbar';
+//import Button from './Button.js'
 
 class App extends Component {
   render() {
+   // 
+   // let s1 = {verticalAlign: 'middle'};
+    //let s2 = {textAlign: 'center'};
 
     return(
-      <VerticalTimeline>
-      {
+      <div>
+        <header>
+        <Appbar style = {{background: "white"}} class="mui--z4" className="mui--appbar-height"> 
+        TechSuite
+          
+        </Appbar>
+        </header>
 
-        // let style = this.getStyleFromTask(task);
+        <VerticalTimeline/>
 
-        tasks.map((task, index) => {
-            let style;
-            if (task.taskProgress === "Completed") {
-              style = completedStyle;
-            } else if (task.taskProgress === "Incomplete") {
-              style = incompletedStyle;
-            } else if (task.taskProgress === "In Progress") {
-              // set style to whatever
-            }
-
-
-          if (index % 2 === 0) {
-            return (
-              <VerticalTimelineElement
-              position="right"
-              iconStyle={style}
-              >
-              <h3 className="vertical-timeline-element-title">{index}</h3>
-              <h4 className="vertical-timeline-element-subtitle">{task.taskDescription}</h4>
-              <Button onClick={this.handleClick(task)}/>
-              <SimpleDialogWrapped
-                selectedValue={task}
-                open={this.state.open}
-                onClose={this.handleClose}
-              />
-              </VerticalTimelineElement>
-              );
-
-          } else {
-            return (
-              <VerticalTimelineElement
-              position="left"
-              iconStyle={style}
-              >
-              <h3 className="vertical-timeline-element-title">{index}</h3>
-              <h4 className="vertical-timeline-element-subtitle">{task.taskDescription}</h4>
-              </VerticalTimelineElement>
-              );
-
-          }
-        })
-      }
-      </VerticalTimeline>
+      </div>
       );
-  }
+    }
 
 }
 
 export default App;
 
 
+//Passing props example: <Home name = {"Max"} age = {27} user = {user} />
+
+//var user = {
+  // name: "Anna",
+  // hobbies: ["sports", "reading"]
+//};
+
+//Component receiving props
+// Example: 
+// <p> Your name is {this.props.name} </p>
+// <p> User Object => Name: {this.props.user.name} </p>
+
+// <h4 Hobbies <h4/>
+// <ul> 
+//  {this.props.user.hobbies.map((hobby, i) => <li key = {}> {hobby} </li> )}
+
+//Setting up prop types:
+// Home.propTyes = {
+  // name: React.propTypes.string,
+  // age: React.propTypes.number,
+  // user: React.propTypes.object 
+//};
+
+
+// <tr style={s1}> </tr>
