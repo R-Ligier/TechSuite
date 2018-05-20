@@ -3,8 +3,17 @@
 		"taskID": 0,
 		"taskName": "Programming Langauge",
 		"taskProgress": "Incomplete",
-		"taskDescription": "Learn a programming language"
-	
+		"taskDescription": "Learn a programming language",
+		"taskLinks": [
+			{
+				"name": "Meetup",
+				"url" : "www.meetup.com"
+			},
+			{
+				"name": "Enrise",
+				"url": "www.enrise.io"
+			}
+		]
 	},
 	{
 		"taskID": 1,

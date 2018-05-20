@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "ajv": "^6.4.0",
-    "material-ui": "^0.20.1",
+    "material-ui": "^1.0.0-beta.44",
     "materialize-css": "^1.0.0-rc.1",
     "muicss": "^0.9.39",
     "react": "^16.3.2",

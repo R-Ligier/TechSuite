@@ -1,33 +1,49 @@
 import React, { Component } from 'react';
 import VerticalTimeline from './VerticalTimeline.js'
-import Appbar from 'muicss/lib/react/appbar';
+// import Appbar from 'muicss/lib/react/appbar';
+import AppBar from 'material-ui/AppBar';
 //import Button from './Button.js'
+
+
+const appBarStyle = {
+  height: 100,
+  background: "black",
+  textAlign: 'center',
+  fontSize: 50,
+  padding: 25
+}
 
 class App extends Component {
   render() {
-   // 
-   // let s1 = {verticalAlign: 'middle'};
-    //let s2 = {textAlign: 'center'};
 
-    return(
+    return (
       <div>
-        <header>
-        <Appbar style = {{background: "white"}} class="mui--z4" className="mui--appbar-height"> 
-        TechSuite
-          
-        </Appbar>
-        </header>
+        <AppBar position="static" style = {appBarStyle}>
+          TechSuite
+        </AppBar>
 
-        <VerticalTimeline/>
+        <div>
 
+        <p> How to: </p>
+        </div>
+        <VerticalTimeline />
       </div>
       );
     }
-
 }
 
 export default App;
 
+//Appbar -> https://www.muicss.com/docs/v1/react/appbar
+//Appbar -> https://www.muicss.com/docs/v1/css-js/css-helpers
+
+
+      
+
+// <Appbar style = {{background: "white"}} class="mui--z4" className="mui--appbar-height"> 
+        // TechSuite
+          
+        // </Appbar>
 
 //Passing props example: <Home name = {"Max"} age = {27} user = {user} />
 

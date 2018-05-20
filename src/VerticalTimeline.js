@@ -10,7 +10,7 @@ import Image from './roundicon.svg';
 
 const storage = window.localStorage;
 const iconImg = {
-	backgroundImage: `url(${Image})`
+	color: "black"
 }
 class App extends Component {
 
@@ -60,32 +60,21 @@ class App extends Component {
      <VerticalTimeline>
       {
 
-        // let style = this.getStyleFromTask(task);
-
         myTasks.map((task, index) => {
-            // let style;
-            // if (task.taskProgress === "Completed") {
-            //   style = completedStyle;
-            // } else if (task.taskProgress === "Incomplete") {
-            //   style = incompletedStyle;
-            // } else if (task.taskProgress === "In Progress") {
-            //   // set style to whatever
-            // }
-			// iconStyle={style}
 
           if (index % 2 === 0) {
             return (
 
               <VerticalTimelineElement
               position="right"
-          	  //iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-          	  iconStyle = {iconImg}
-              
-              >
-              <h3 className="vertical-timeline-element-title">{task.taskName}</h3>
-              <br></br>
-              <h4 className="vertical-timeline-element-subtitle">{task.taskDescription}</h4>
+          	  iconStyle={{ background: "white", color: "black" }}>
+
+	            <h3 className="vertical-timeline-element-title">{task.taskName}</h3>
+	            <br/>
+	            <h4 className="vertical-timeline-element-subtitle">{task.taskDescription}</h4>
+	            <br/>
               	<MyButton task = {task} handleTaskChange = { this.changeTask }/>
+              	<br/>
               	<Box task = {task}/>
               </VerticalTimelineElement>
 
@@ -98,10 +87,12 @@ class App extends Component {
               position="left"
               >
               <h3 className="vertical-timeline-element-title">{task.taskName}</h3>
-              <br></br>
+              <br/>
               <h4 className="vertical-timeline-element-subtitle">{task.taskDescription}</h4>
-              	<MyButton task = {task} handleTaskChange = { this.changeTask }/>
-              	<Box task = {task}/>
+              <br/>
+              <MyButton task = {task} handleTaskChange = { this.changeTask }/>
+              <br/>
+              <Box task = {task}/>
               </VerticalTimelineElement>
               );
 

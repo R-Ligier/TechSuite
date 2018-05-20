@@ -1,34 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from 'muicss/lib/react/button';
+// import Button from 'muicss/lib/react/button';
+import Button from 'material-ui/Button';	
 
-
-// const states = [
-// 	{
-// 		name: "Incompleted",
-// 		color: "red",
-// 	},
-// 	{
-// 		name: "In progress",
-// 		color: "yellow",
-// 	},
-// 	{
-// 		name: "Completed",
-// 		color: "green",
-// 	},
-// ];
-
-// const completedStyle = {
-//   background: 'green',
-// };
-
-// const incompletedStyle = {
-//   background: '#26ee99',
-// }
 class MyButton extends React.Component {
-	// constructor(props){
-	// 	super(props);
-	// }
 
 	getStateColor(stateName) {
 		const stateColors = {
@@ -45,11 +20,12 @@ class MyButton extends React.Component {
 
 		return (
 			<div>
-				<Button size = "large"
+				<Button variant = "raised"
 					onClick={() => handleTaskChange(task)}
-					style={{ background: this.getStateColor(task.taskProgress) }}>
+					style = {{ background: this.getStateColor(task.taskProgress)}}>
 					{task.taskProgress}
 				</Button>
+			
       		</div>
   	);
   }
@@ -61,5 +37,3 @@ MyButton.propTypes = {
 }
 
 export default MyButton;
-
-   
