@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import Button from 'muicss/lib/react/button';
 import Button from 'material-ui/Button';	
 
 class MyButton extends React.Component {
@@ -19,8 +18,8 @@ class MyButton extends React.Component {
 		const { task, handleTaskChange } = this.props;
 
 		return (
-			<div>
-				<Button variant = "raised"
+			<div style = {{display: 'flex', justifyContent: 'center'}}>
+				<Button variant = "flat"
 					onClick={() => handleTaskChange(task)}
 					style = {{ background: this.getStateColor(task.taskProgress)}}>
 					{task.taskProgress}

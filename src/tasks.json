@@ -1,16 +1,20 @@
 [
 	{
 		"taskID": 0,
-		"taskName": "Programming Langauge",
+		"taskName": "Learn a Programming Langauge",
 		"taskProgress": "Incomplete",
-		"taskDescription": "Learn a programming language",
+		"taskOneLiner": "Deciding on which programming language to start learning as a beginner may be difficult.",
+		"taskPart": "Check out a list of languages we recommend starting with and why.",
+		"taskDescription": "Below are a list of languages we feel are easiest to learn as a beginner but is also relatively used in the industry",
 		"taskLinks": [
 			{
-				"name": "Meetup",
+				"name": "JavaScript ",
+				"description": "blah",
 				"url" : "www.meetup.com"
 			},
 			{
-				"name": "Enrise",
+				"name": "Python ",
+				"description": "blah1",
 				"url": "www.enrise.io"
 			}
 		]
@@ -19,40 +23,60 @@
 		"taskID": 1,
 		"taskName": "GitHub",
 		"taskProgress": "Incomplete",
-		"taskDescription": "Learn how GitHub works"
-	
+		"taskOneLiner": "Learn what GitHub is and how it's used in the industry today.", 
+		"taskDescription": "GitHub is a tool used in and out of the workplace. It is essentially a cloud where developers can store code, PDF files, and anything else one desires. However, its real benefits and use lie in its features of being able to show changes in code, collaboration amongst teams, and creating branches (you will learn this soon) to test ideas without modifying the original project.",
+		"taskLinks": [
+			{
+				"name": "Meetup: ",
+				"url" : "www.meetup.com"
+			},
+			{
+				"name": "Enrise ",
+				"url": "www.enrise.io"
+			}
+		]
 	},
 	{
 		"taskID": 2,
 		"taskName": "Portfolio Building",
 		"taskProgress": "Incomplete",
-		"taskDescription": "Build a simple site to represent yourself or something your passionate about and use GitHub to store your code"
+		"taskOneLiner": "Portfolios are one of the many common ways to prove your tech capabilities to a potential employer. Generally, they consist of projects you've worked or collaborated on that you feel confident to put on display.",
+		"taskPart": "Check out a list of languages we recommend starting with and why.",
+		"taskDescription": "As a beginner, portfolio building may feel overwhelming. Perhaps you don't have any or many projects to show and aren't sure where to start. Here are a few different ways to get started regardless of where you stand: "
 	
 	},
 	{
 		"taskID": 3,
 		"taskName": "Attend a Meetup!",
 		"taskProgress": "Incomplete",
-		"taskDescription": "Meetups are a great way to network and get your foot in the door to the tech industry. Pick a meetup that seems interesting and check it out!"
+		"taskOneLiner": "Meetups are a great way to network, learn new languages and technology, and get your foot in the door to the tech industry. Find a meetup in your area that seems interesting and check it out!",
+		"taskPart": "Check out a list of languages we recommend starting with and why.",
+		"taskDescription": "Attending tech meetups as a beginner can be nerve wrecking, you don't want to look dumb so you shy away from mingling with others or asking questions. The best way to approach this feeling is by not being afraid to show that you're a beginner. We've all started out this way! It's important of course to be aware that some will react better and more empathetic than others and to not feel discouraged. Here a few meetups that are beginner friendly: "
 	
 	},
 	{
 		"taskID": 4,
 		"taskName": "Participate in a Hackathon",
 		"taskProgress": "Incomplete",
-		"taskDescription": "Hackathons are another great way to meet others like you and either practice a language you already know or learn a new one. Check out the links below for Hackathons in your area!"
+		"taskOneLiner": "Similiarly to meetups, Hackathons are also a great way to learn and meet new people. ", 
+		"taskPart": "Check out a list of languages we recommend starting with and why.",
+		"taskDescription": "Hackathons are usually a day long (can be 36 hours, 48 hours, etc.) coding competitions where software programmers, developers, designers, etc. come together to build and design a product related to a given theme."
 	
 	},
 	{
 		"taskID": 5,
-		"taskName": "Resume Building",
+		"taskName": "Technical Resumes",
 		"taskProgress": "Incomplete",
-		"taskDescription": "Now that you've got a project or projects to show off, lets get you going with a technical resume! Check out the links listed to see the format and structure of what a technical resume looks like"
+		"taskOneLiner": "Technical resumes are not structured the way a usual resume is. Learn how a technical resume is structured and how to format yours.",
+		"taskPart": "Check out a list of languages we recommend starting with and why.",
+		"taskDescription": "Unlike the typical resume, technical resumes shine light on projects you've built or collaborated on currently or in the past. Some technical resumes may even contain a separate section for tech related knowledge such as: programming languages, familiar softwares, and so forth. It's important to really highlight your tech skills to let your potential employer know..."
 	},
 	{
 		"taskID": 6,
-		"taskName": "Interview Prep",
+		"taskName": "Technical Interview Prep",
 		"taskProgress": "Incomplete",
+		"taskOneLiner": "Technical interviews are known to be challenging and there is no secret to acing it other than practicing.",
+		"taskPart": "Check out a list of languages we recommend starting with and why.",
 		"taskDescription": "It's extremely important to be career and industry ready, but now it's time to get you actually working in tech. Technical interviews are one of a kind. But have no fear, help is here! Check out the links below to start prepping for technical interviews"
 	
 	}

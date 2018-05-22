@@ -1,11 +1,7 @@
 import React from 'react';
 import Modal from 'react-responsive-modal';
-import Image from './arrow.svg';
 import Button from 'material-ui/Button';
 
-const buttonIcon = {
-  backgroundImage: `url(${Image})`
-}
 
 class Box extends React.Component {
     state = {
@@ -28,22 +24,23 @@ class Box extends React.Component {
     console.log(task.taskLinks);
 
     return (
-      <div className ="example">
-        <Button variant = "raised" className = "btn btn-action" onClick = {this.onOpenModal}>
-         Click to View More
+      <div className = "example" style = {{display: 'flex', justifyContent: 'center'}}>
+        <Button className = "btn btn-action" onClick = {this.onOpenModal} style = {{backgroundColor: "transparent"}}>
+         View More 
         </Button>
        
-        <Modal open = {open} onClose = {this.onCloseModal} center>
-          <h2>{task.taskName}</h2>
+        <Modal open = {open} onClose = {this.onCloseModal} style = {{fontFamily: 'Roboto'}} center>
+          <h2 style = {{textAlign: "center"}}>{task.taskName}</h2>
           <p> {task.taskDescription} </p>
-
           <ul>
             {task.taskLinks ? task.taskLinks.map(link => (
-              <li>
-                {link.name}
-                <a href = {link.url}>
+              <li style = {{lineHeight: .5}}>
+                <b>{link.name}</b>
+                <p> {link.description} </p>
+                <p> Link: <a href = {link.url}>
                   {link.url}
                 </a>
+                </p>
               </li>
 
               )) : null}

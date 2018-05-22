@@ -5,13 +5,11 @@ import 'react-vertical-timeline-component/style.min.css';
 import MyButton from './Button.js';
 import tasks from './tasks.json';
 import Box from './DialogBox.js';
-import Image from './roundicon.svg';
+
 
 
 const storage = window.localStorage;
-const iconImg = {
-	color: "black"
-}
+
 class App extends Component {
 
 	constructor(props) {
@@ -66,33 +64,36 @@ class App extends Component {
             return (
 
               <VerticalTimelineElement
-              position="right"
-          	  iconStyle={{ background: "white", color: "black" }}>
+              position = "right"
+          	  iconStyle = {{ background: "white", boxShadow: "0px 6px 55px 0px rgba(0,0,0,0.75)" }}>
 
-	            <h3 className="vertical-timeline-element-title">{task.taskName}</h3>
+	            <h2 className = "vertical-timeline-element-title" style = {{fontWeight: 900, textAlign: "center"}}>{task.taskName}</h2>
+	            <p style = {{fontFamily: 'Roboto', fontSize: 18, lineHeight: 'normal'}}>{task.taskOneLiner}</p>
 	            <br/>
-	            <h4 className="vertical-timeline-element-subtitle">{task.taskDescription}</h4>
+	            <p style = {{fontFamily: 'Roboto', fontSize: 18, lineHeight: 'normal'}}>{task.taskPart}</p>
+	            <Box task = {task}/>
 	            <br/>
-              	<MyButton task = {task} handleTaskChange = { this.changeTask }/>
-              	<br/>
-              	<Box task = {task}/>
+              	<MyButton task = {task} handleTaskChange = { this.changeTask } />
+              	
               </VerticalTimelineElement>
 
               );
 
           } else {
-          	// iconStyle={style}
             return (
               <VerticalTimelineElement
-              position="left"
-              >
-              <h3 className="vertical-timeline-element-title">{task.taskName}</h3>
+              position = "left"
+              iconStyle = {{ background: "white", color: "black", boxShadow: "0px 6px 55px 0px rgba(0,0,0,0.75)" }}>
+              
+              <h2 className = "vertical-timeline-element-title" style = {{fontWeight: 900, textAlign: "center"}}>{task.taskName}</h2>
+              <p style = {{fontFamily: 'Roboto', fontSize: 18, lineHeight: 'normal'}}>{task.taskOneLiner}</p>
               <br/>
-              <h4 className="vertical-timeline-element-subtitle">{task.taskDescription}</h4>
-              <br/>
-              <MyButton task = {task} handleTaskChange = { this.changeTask }/>
+	          <p style = {{fontFamily: 'Roboto', fontSize: 18, lineHeight: 'normal'}}>{task.taskPart}</p>
               <br/>
               <Box task = {task}/>
+              <br/>
+              <MyButton task = {task} handleTaskChange = { this.changeTask }/>
+             
               </VerticalTimelineElement>
               );
 

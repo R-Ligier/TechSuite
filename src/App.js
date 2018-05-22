@@ -1,33 +1,22 @@
 import React, { Component } from 'react';
 import VerticalTimeline from './VerticalTimeline.js'
-// import Appbar from 'muicss/lib/react/appbar';
-import AppBar from 'material-ui/AppBar';
-//import Button from './Button.js'
+import Instructions from './Instructions.js'
 
-
-const appBarStyle = {
-  height: 100,
-  background: "black",
-  textAlign: 'center',
-  fontSize: 50,
-  padding: 25
-}
 
 class App extends Component {
   render() {
 
     return (
-      <div>
-        <AppBar position="static" style = {appBarStyle}>
-          TechSuite
-        </AppBar>
+    <div>
 
-        <div>
-
-        <p> How to: </p>
-        </div>
-        <VerticalTimeline />
+      <div style = {{display: 'flex', justifyContent: 'center'}}>
+        <Instructions/>
       </div>
+
+      
+        <VerticalTimeline />
+    </div>
+
       );
     }
 }

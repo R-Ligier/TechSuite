@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
 body {
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  background: #EEEEEE;
+  padding-top: 63;
+  background: url("blah1.png");
+  font-family: 'Roboto', sans-serif;
 }
+
