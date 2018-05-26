@@ -4,8 +4,8 @@ import Typography from 'material-ui/Typography';
 
 
 const PaperStyle = {
-	height: 370,
-	width: 1550,
+	height: 380,
+	width: 1500,
 	paddingTop: 16,
 	marginTop: 40,
     paddingBottom: 16
@@ -28,7 +28,7 @@ render() {
        		<br/>
 
        		<Typography style = {{fontSize: 18, marginLeft: 20, marginRight: 8}}>
-         		The career guide is structured in a timeline flow for you to follow. The first task to begin with is "Learn a Programming Language". You do not need to start with the first task. You are free to start any point.
+         		The career guide is structured in a timeline flow for you to follow. The first task to begin with is "Learn a Programming Language". You do not need to begin with the first task and are free to begin at any point.
        		</Typography>
 
        		<br/>
@@ -36,7 +36,7 @@ render() {
        		<Typography style = {{fontSize: 18, marginLeft: 20, marginRight: 8}}>
 
          		<b style = {{fontSize: 20}}> Navigation </b>
-         		
+
          		<p> All tasks begin as Incomplete. To change the tasks status, do the following: </p>
          		
          		<ul>
@@ -44,7 +44,7 @@ render() {
          			<li> <b>Task is Complete:</b> Click on the status button twice </li>
          		</ul>
 
-         		<p> To view further content of a task, click the <b> View More </b> button </p>
+         		<p> To view further content of a task, click the <b> View More </b> button. </p>
 
        		</Typography>
 		</Paper>

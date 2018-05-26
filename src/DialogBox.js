@@ -29,15 +29,15 @@ class Box extends React.Component {
          View More 
         </Button>
        
-        <Modal open = {open} onClose = {this.onCloseModal} style = {{fontFamily: 'Roboto'}} center>
-          <h2 style = {{textAlign: "center"}}>{task.taskName}</h2>
+        <Modal open = {open} onClose = {this.onCloseModal} center>
+          <h2 style = {{textAlign: "center", fontFamily: 'Roboto light'}}>{task.taskName}</h2>
           <p> {task.taskDescription} </p>
           <ul>
             {task.taskLinks ? task.taskLinks.map(link => (
               <li style = {{lineHeight: .5}}>
-                <b>{link.name}</b>
-                <p> {link.description} </p>
-                <p> Link: <a href = {link.url}>
+                <p><b> {link.description} </b> </p>
+                <i>{link.name}</i>
+                <p> <i>Link:</i> <a href = {link.url}>
                   {link.url}
                 </a>
                 </p>

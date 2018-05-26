@@ -8,14 +8,13 @@
 		"taskDescription": "Below are a list of languages we feel are easiest to learn as a beginner but is also relatively used in the industry",
 		"taskLinks": [
 			{
-				"name": "JavaScript ",
-				"description": "blah",
-				"url" : "www.meetup.com"
+				"name": " ",
+				"description": "JavaScript",
+				"url" : ""
 			},
 			{
-				"name": "Python ",
-				"description": "blah1",
-				"url": "www.enrise.io"
+				"name": "",
+				"description": "Python"
 			}
 		]
 	},
@@ -24,15 +23,22 @@
 		"taskName": "GitHub",
 		"taskProgress": "Incomplete",
 		"taskOneLiner": "Learn what GitHub is and how it's used in the industry today.", 
-		"taskDescription": "GitHub is a tool used in and out of the workplace. It is essentially a cloud where developers can store code, PDF files, and anything else one desires. However, its real benefits and use lie in its features of being able to show changes in code, collaboration amongst teams, and creating branches (you will learn this soon) to test ideas without modifying the original project.",
+		"taskDescription": "GitHub is a tool used in and out of the workplace. It is essentially a cloud where developers can store code, files/documents of any type, and anything else one desires. However, its real benefits and use lie in its features of being able to track changes in code and, neatly manage project collaboration amongst teams, and creating branches (you will learn this soon) to test ideas without modifying the original project.",
 		"taskLinks": [
 			{
-				"name": "Meetup: ",
-				"url" : "www.meetup.com"
+				"name": " Article: GitHub for Beginners: Don't Get Scared, Get Started:",
+				"description": "Overview for beginners of GitHub - the language used, features, benefits, and more ...",
+				"url" : "https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/"
 			},
 			{
-				"name": "Enrise ",
-				"url": "www.enrise.io"
+				"name": " Article: Signing Up for a New GitHub Account",
+				"description": "Get your own GitHub Account!",
+				"url": "https://help.github.com/articles/signing-up-for-a-new-github-account/"
+			},
+			{
+				"name": "Article: GitHub Features Guide",
+				"description": "Step by step guide on how to use GitHub's features and navigate the platform:",
+				"url": "https://guides.github.com/activities/hello-world/"
 			}
 		]
 	},
@@ -41,9 +47,19 @@
 		"taskName": "Portfolio Building",
 		"taskProgress": "Incomplete",
 		"taskOneLiner": "Portfolios are one of the many common ways to prove your tech capabilities to a potential employer. Generally, they consist of projects you've worked or collaborated on that you feel confident to put on display.",
-		"taskPart": "Check out a list of languages we recommend starting with and why.",
-		"taskDescription": "As a beginner, portfolio building may feel overwhelming. Perhaps you don't have any or many projects to show and aren't sure where to start. Here are a few different ways to get started regardless of where you stand: "
-	
+		"taskDescription": "As a beginner, portfolio building may feel overwhelming. Perhaps you don't have any or many projects to show and aren't sure where to start. Here are a few different ways to get started regardless of where you stand: ",
+		"taskLinks": [
+			{
+				"name": "Article: 15 Web Developer Portfolios to Inspire You ",
+				"description": "Guide on what should be included in your portfolio and samples of other software engineers portfolio's",
+				"url" : "https://medium.freecodecamp.org/15-web-developer-portfolios-to-inspire-you-137fb1743cae"
+			},
+			{
+				"name": "Article: The Importance of a Developer Portfolio",
+				"description": "Blog discussing the importance of having a portfolio and benefits of it.",
+				"url": "https://www.thedevcoach.co.uk/the-importance-of-the-developer-portfolio/"
+			}
+		]
 	},
 	{
 		"taskID": 3,
@@ -59,7 +75,6 @@
 		"taskName": "Participate in a Hackathon",
 		"taskProgress": "Incomplete",
 		"taskOneLiner": "Similiarly to meetups, Hackathons are also a great way to learn and meet new people. ", 
-		"taskPart": "Check out a list of languages we recommend starting with and why.",
 		"taskDescription": "Hackathons are usually a day long (can be 36 hours, 48 hours, etc.) coding competitions where software programmers, developers, designers, etc. come together to build and design a product related to a given theme."
 	
 	},
