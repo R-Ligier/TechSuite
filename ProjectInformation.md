@@ -11,4 +11,4 @@ Instead of "classes", React identifies these as "components". Each object (ex: b
 
 
 ## Functionality / Technicalities
-#### Each card element on the timeline is a task for a user to complete. The card element contains a task name, desciption of relevant to the type of task, a "View More" button containing the full content of the task, and a status button to set the status of task to - Incomplete, In Progress, or Complete.
+Each card element on the timeline is a task for a user to complete. The card element contains a task name, desciption of relevant to the type of task, a "View More" button containing the full content of the task, and a status button to set the status of task to - Incomplete, In Progress, or Complete.
