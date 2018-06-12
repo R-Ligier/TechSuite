@@ -65,9 +65,21 @@
 		"taskID": 3,
 		"taskName": "Attend a Meetup!",
 		"taskProgress": "Incomplete",
-		"taskOneLiner": "Meetups are a great way to network, learn new languages and technology, and get your foot in the door to the tech industry. Find a meetup in your area that seems interesting and check it out!",
-		"taskPart": "Check out a list of languages we recommend starting with and why.",
-		"taskDescription": "Attending tech meetups as a beginner can be nerve wrecking, you don't want to look dumb so you shy away from mingling with others or asking questions. The best way to approach this feeling is by not being afraid to show that you're a beginner. We've all started out this way! It's important of course to be aware that some will react better and more empathetic than others and to not feel discouraged. Here a few meetups that are beginner friendly: "
+		"taskOneLiner": "Meetups are a great way to network, learn new languages and technology, and get your foot in the door to the tech industry.",
+		"taskPart": "Find a meetup in your area that seems interesting and check it out!",
+		"taskDescription": "Attending tech meetups as a beginner can be nerve wrecking, you're afraid looking 'dumb' so you shy away from mingling with others or asking questions. The best way to approach this feeling is by not being afraid to show that you're a beginner. We've all started out this way! It's important of course to be aware that some will react better and more empathetic than others and to not feel discouraged",
+		"taskLinks": [
+			{
+				"name": "",
+				"description": "Sign up for a Meetup account. This gives you access to join the community and attend Meetups of your likings and interests",
+				"url" : "https://secure.meetup.com/register/"
+			},
+			{
+				"name": "Article: The Importance of a Developer Portfolio",
+				"description": "Blog discussing the importance of having a portfolio and benefits of it.",
+				"url": "https://www.thedevcoach.co.uk/the-importance-of-the-developer-portfolio/"
+			}
+		]
 	
 	},
 	{
